@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
+import Ecommerce from './components/Ecommerce'
 
 export default function App() {
   const [route, setRoute] = useState('login')

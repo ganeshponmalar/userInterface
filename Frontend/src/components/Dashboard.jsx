@@ -21,6 +21,12 @@ export default function Dashboard({ onNavigate }) {
           <h1>Admin Dashboard</h1>
           <div className="header-actions">
             <button className="btn-secondary" onClick={() => onNavigate && onNavigate('login')}>Sign out</button>
+            <button
+  className="btn-primary"
+  onClick={() => onNavigate('ecommerce')}
+>
+  Ecommerce
+</button>
           </div>
         </header>
 
