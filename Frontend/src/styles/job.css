@@ -1,0 +1,10 @@
+.job-root { padding: 20px }
+.job-header { display:flex; justify-content:space-between; align-items:center }
+.job-controls { margin-top:12px; display:flex; gap:8px; align-items:center }
+.job-controls input, .job-controls select { padding:6px 8px; border:1px solid #ccc; border-radius:4px }
+.job-table { width:100%; border-collapse:collapse; margin-top:12px }
+.job-table th, .job-table td { padding:8px 6px; border-bottom:1px solid #eee; text-align:left }
+.job-table td:first-child { width:48px }
+.job-table td:last-child { text-align:center }
+.job-controls button { padding:6px 10px }
+.job-empty { margin-top:12px; color:#666 }
