@@ -1,0 +1,27 @@
+/* E-commerce layout */
+.ecom-root{display:grid;grid-template-columns:220px 1fr 320px;gap:16px;min-height:80vh;padding:20px}
+.ecom-left{background:#fff;padding:14px;border-radius:10px}
+.ecom-main{background:transparent}
+.ecom-cart{background:transparent}
+.search-bar input{width:100%;padding:10px;border:1px solid #e6eef8;border-radius:8px}
+.filters h4{margin:0 0 8px 0}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.product-card{background:white;border-radius:12px;padding:12px;display:flex;gap:12px;align-items:center;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.product-thumb{font-size:28px}
+.product-title{font-weight:600}
+.product-category{font-size:12px;color:#64748b}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+.btn-add{background:#2563eb;color:white;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.cart{background:white;padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.cart ul{list-style:none;padding:0;margin:0}
+.cart-item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eef2ff}
+.cart-total{font-weight:700;margin-top:12px}
+.empty{color:#64748b;padding:12px}
+
+@media (max-width: 1000px){
+  .ecom-root{grid-template-columns:1fr;}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .product-grid{grid-template-columns:1fr}
+}

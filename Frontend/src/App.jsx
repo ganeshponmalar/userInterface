@@ -13,6 +13,7 @@ export default function App() {
     <div className="app-root">
       {route === 'login' && <Login onNavigate={navigate} />}
       {route === 'dashboard' && <Dashboard onNavigate={navigate} />}
+      {route === 'ecommerce' && <Ecommerce onNavigate={navigate} />}
     </div>
   )
 }
