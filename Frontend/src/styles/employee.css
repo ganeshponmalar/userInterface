@@ -1,0 +1,9 @@
+.employee-root { padding: 20px; }
+.employee-header { display:flex; justify-content:space-between; align-items:center }
+.employee-form { display:flex; gap:8px; align-items:center; margin-top:12px }
+.employee-form input { padding:6px 8px; border:1px solid #ccc; border-radius:4px }
+.employee-form button { padding:6px 10px }
+.employee-search { margin-top:12px }
+.employee-table { width:100%; border-collapse:collapse; margin-top:12px }
+.employee-table th, .employee-table td { padding:8px 6px; border-bottom:1px solid #eee; text-align:left }
+.employee-actions button { margin-right:8px }

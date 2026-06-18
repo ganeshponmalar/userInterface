@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import Ecommerce from './components/Ecommerce'
+import EmployeeManagement from './components/EmployeeManagement'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -15,6 +16,7 @@ export default function App() {
       {route === 'login' && <Login onNavigate={navigate} />}
       {route === 'dashboard' && <Dashboard onNavigate={navigate} />}
       {route === 'ecommerce' && <Ecommerce onNavigate={navigate} />}
+      {route === 'employees' && <EmployeeManagement onNavigate={navigate} />}
     </div>
   )
 }
