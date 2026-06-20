@@ -24,6 +24,8 @@ export default function Dashboard({ onNavigate }) {
             <button className="btn-primary" onClick={() => onNavigate('ecommerce')}>Ecommerce</button>
             <button className="btn-primary" onClick={() => onNavigate('employees')}>Employees</button>
             <button className="btn-primary" onClick={() => onNavigate('jobs')}>Jobs</button>
+            <button className="btn-primary" onClick={() => onNavigate('travel')}>Travel</button>
+            <button className="btn-primary" onClick={() => onNavigate('jobs')}>Jobs</button>
           </div>
         </header>
 

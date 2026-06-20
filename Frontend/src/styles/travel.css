@@ -1,0 +1,18 @@
+.travel-root { padding: 20px; font-family: Arial, sans-serif }
+.travel-header { display:flex; justify-content:space-between; align-items:center }
+.travel-logo { font-weight:700 }
+.travel-nav button { margin-left:8px }
+.travel-hero { margin-top:20px; padding:24px; background:#f5f8ff; border-radius:8px }
+.hero-form { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px }
+.hero-form input, .hero-form select { padding:8px; border:1px solid #ccc; border-radius:4px }
+.dest-list { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px }
+.dest-btn { padding:8px 12px; border-radius:4px; border:1px solid #ddd; background:#fff }
+.hotel-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:12px }
+.hotel-card { border:1px solid #eee; border-radius:8px; overflow:hidden; display:flex; flex-direction:column }
+.hotel-image { height:120px; background:#ddd; display:flex; align-items:center; justify-content:center }
+.hotel-info { padding:8px }
+.booking-form { display:flex; gap:8px; flex-wrap:wrap; align-items:center }
+.booking-form input, .booking-form select { padding:8px; border:1px solid #ccc; border-radius:4px }
+.btn-primary { background:#2563eb; color:#fff; padding:8px 12px; border:none; border-radius:4px }
+.testimonials blockquote { background:#fff; padding:12px; border-radius:6px; margin:8px 0 }
+.travel-footer { margin-top:24px; border-top:1px solid #eee; padding-top:12px; display:flex; justify-content:space-between }
