@@ -1,0 +1,76 @@
+/* App.css - manufacturing dashboard styles */
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#2563eb;
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box}
+body,html,#root{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+
+.manufacturing-root{display:flex;min-height:100vh;background:#f4f6fb}
+.sidebar{width:220px;background:#0b1220;color:#fff;padding:20px;position:fixed;left:0;top:0;bottom:0;display:flex;flex-direction:column}
+.sidebar-brand{font-size:18px;font-weight:700;margin-bottom:12px}
+.sidebar-nav{display:flex;flex-direction:column;gap:8px}
+.sidebar-nav button{background:transparent;border:none;color:#cbd5e1;padding:8px 10px;text-align:left;border-radius:6px;cursor:pointer;transition:background .15s}
+.sidebar-nav button:hover{background:var(--glass);color:#fff}
+.sidebar-footer{margin-top:auto;font-size:12px;color:var(--muted)}
+
+.main-area{margin-left:220px;flex:1;display:flex;flex-direction:column}
+.app-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e6eef8;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.header-left h3{margin:0}
+.header-right{display:flex;gap:12px;align-items:center}
+.notifications{padding:6px 10px;background:#eef2ff;border-radius:8px}
+.profile{padding:6px 10px;background:#f1f5f9;border-radius:8px}
+
+.main-content{padding:20px;display:flex;flex-direction:column;gap:20px}
+
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.stat-card{background:#fff;padding:14px;border-radius:8px;box-shadow:0 6px 18px rgba(12,20,32,0.04);transition:transform .12s}
+.stat-card:hover{transform:translateY(-4px)}
+.stat-title{font-size:12px;color:var(--muted)}
+.stat-value{font-size:20px;font-weight:700;margin-top:8px}
+.stat-delta{font-size:12px;color:#10b981;margin-top:6px}
+
+.middle-row{display:grid;grid-template-columns:1fr 360px;gap:20px}
+.left-col{display:flex;flex-direction:column;gap:20px}
+.right-col{display:flex;flex-direction:column;gap:20px}
+.card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(12,20,32,0.04)}
+
+.tracking-form{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:center}
+.tracking-form select,.tracking-form input{padding:8px;border:1px solid #e6eef8;border-radius:6px}
+.tracking-actions{grid-column:1/4;display:flex;gap:8px;justify-content:flex-end}
+.btn-primary{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer}
+
+.failure-table table{width:100%;border-collapse:collapse}
+.failure-table th,.failure-table td{padding:10px;border-bottom:1px solid #f1f5f9;text-align:left}
+.failure-table tr:hover{background:#fbfdff}
+
+.repair-status .progress-row{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.progress-track{flex:1;background:#f1f5f9;border-radius:8px;height:12px;overflow:hidden}
+.progress-fill{height:100%;border-radius:8px}
+.progress-label{width:120px}
+.progress-value{width:48px;text-align:right}
+
+.charts{display:grid;grid-template-columns:1fr;gap:8px}
+.chart{background:#f8fafc;padding:12px;border-radius:6px;text-align:center;color:#64748b}
+
+.activity-panel{background:#fff;padding:12px;border-radius:8px}
+.activity-item{padding:8px 0;border-bottom:1px solid #f1f5f9}
+.activity-item:last-child{border-bottom:none}
+
+/* responsive */
+@media (max-width: 1000px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .middle-row{grid-template-columns:1fr}
+  .tracking-form{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width: 600px){
+  .sidebar{display:none}
+  .main-area{margin-left:0}
+  .stats-grid{grid-template-columns:1fr}
+  .tracking-form{grid-template-columns:1fr}
+}

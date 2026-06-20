@@ -5,6 +5,7 @@ import Ecommerce from './components/Ecommerce'
 import EmployeeManagement from './components/EmployeeManagement'
 import TravelLanding from './components/TravelLanding'
 import JobPortal from './components/JobPortal'
+import ManufacturingDashboard from './pages/ManufacturingDashboard'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -19,8 +20,9 @@ export default function App() {
       {route === 'dashboard' && <Dashboard onNavigate={navigate} />}
       {route === 'ecommerce' && <Ecommerce onNavigate={navigate} />}
       {route === 'employees' && <EmployeeManagement onNavigate={navigate} />}
-        {route === 'jobs' && <JobPortal onNavigate={navigate} />}
-        {route === 'travel' && <TravelLanding onNavigate={navigate} />}
+      {route === 'jobs' && <JobPortal onNavigate={navigate} />}
+      {route === 'travel' && <TravelLanding onNavigate={navigate} />}
+      {route === 'manufacturing' && <ManufacturingDashboard onNavigate={navigate} />}
     </div>
   )
 }
