@@ -74,3 +74,34 @@ body,html,#root{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui
   .stats-grid{grid-template-columns:1fr}
   .tracking-form{grid-template-columns:1fr}
 }
+
+/* Banking styles */
+.banking-root{display:flex;min-height:100vh;background:#f5f7fb}
+.bank-main{margin-left:220px;flex:1}
+.bank-content{padding:20px}
+.bank-top{display:flex;gap:20px;align-items:flex-start}
+.balance-card{flex:1}
+.credit-card{width:320px;background:linear-gradient(135deg,#6b8cff,#2fb6ff);color:#fff;padding:18px;border-radius:14px;box-shadow:0 10px 30px rgba(43,108,255,0.15)}
+.credit-card .card-top{display:flex;justify-content:space-between;align-items:center}
+.credit-card .card-number{font-size:18px;letter-spacing:3px;margin:18px 0}
+.credit-card .card-bottom{display:flex;justify-content:space-between}
+
+.transaction-table .table-controls{display:flex;justify-content:flex-end;margin-bottom:8px}
+.transaction-table table{width:100%;border-collapse:collapse;background:#fff}
+.transaction-table th,.transaction-table td{padding:10px;border-bottom:1px solid #f1f5f9}
+.transaction-table .amount.credit{color:#10b981}
+.transaction-table .amount.debit{color:#ef4444}
+
+.transfer-form{display:flex;flex-direction:column;gap:8px}
+.transfer-form input{padding:8px;border:1px solid #e6eef8;border-radius:6px}
+
+.stats-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+.stat-mini{background:#fff;padding:12px;border-radius:8px}
+
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0;border-bottom:1px solid #f1f5f9}
+
+@media (max-width:900px){
+  .bank-top{flex-direction:column}
+  .credit-card{width:100%}
+}
