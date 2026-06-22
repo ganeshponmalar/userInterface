@@ -50,6 +50,7 @@ export default function ManufacturingDashboard({ onNavigate }) {
   }
 
   const filteredFailures = useMemo(() => {
+
     if (!filter) return failures
     return failures.filter(f => {
       if (filter.factory && filter.factory !== '' && f.factory !== filter.factory) return false

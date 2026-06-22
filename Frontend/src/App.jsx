@@ -5,6 +5,7 @@ import Ecommerce from './components/Ecommerce'
 import EmployeeManagement from './components/EmployeeManagement'
 import TravelLanding from './components/TravelLanding'
 import JobPortal from './components/JobPortal'
+import CRMDashboard from './pages/CRMDashboard'
 import ManufacturingDashboard from './pages/ManufacturingDashboard'
 import BankingDashboard from './pages/BankingDashboard'
 
@@ -24,6 +25,7 @@ export default function App() {
       {route === 'jobs' && <JobPortal onNavigate={navigate} />}
       {route === 'travel' && <TravelLanding onNavigate={navigate} />}
       {route === 'manufacturing' && <ManufacturingDashboard onNavigate={navigate} />}
+      {route === 'crm' && <CRMDashboard onNavigate={navigate} />}
       {route === 'banking' && <BankingDashboard onNavigate={navigate} />}
     </div>
   )
