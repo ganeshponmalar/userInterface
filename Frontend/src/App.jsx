@@ -8,6 +8,7 @@ import JobPortal from './components/JobPortal'
 import CRMDashboard from './pages/CRMDashboard'
 import ManufacturingDashboard from './pages/ManufacturingDashboard'
 import BankingDashboard from './pages/BankingDashboard'
+import SchoolDashboard from './pages/SchoolDashboard'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -27,6 +28,7 @@ export default function App() {
       {route === 'manufacturing' && <ManufacturingDashboard onNavigate={navigate} />}
       {route === 'crm' && <CRMDashboard onNavigate={navigate} />}
       {route === 'banking' && <BankingDashboard onNavigate={navigate} />}
+      {route === 'school' && <SchoolDashboard onNavigate={navigate} />}
     </div>
   )
 }
