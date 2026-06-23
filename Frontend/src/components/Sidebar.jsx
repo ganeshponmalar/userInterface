@@ -13,6 +13,7 @@ export default function Sidebar({ onNavigate }) {
       <nav className="sidebar-nav">
         <button onClick={() => onNavigate && onNavigate('dashboard')}>Dashboard</button>
         <button onClick={() => onNavigate && onNavigate('todo')}>Todo</button>
+        <button onClick={() => onNavigate && onNavigate('kanban')}>Kanban</button>
         <button onClick={() => onNavigate && onNavigate('banking')}>Banking</button>
         <button onClick={() => onNavigate && onNavigate('accounts')}>Accounts</button>
         <button onClick={() => onNavigate && onNavigate('transactions')}>Transactions</button>

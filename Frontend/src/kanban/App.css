@@ -1,0 +1,35 @@
+:root{
+  --bg:#f6f8fb;--card:#fff;--muted:#6b7280;--accent:#7c3aed;--success:#10b981;--danger:#ef4444
+}
+.dark{--bg:#071124;--card:#071826;--muted:#9fb4d1;--accent:#60a5fa}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--muted)}
+.kanban-root{min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:28px}
+.kanban-container{width:100%;max-width:1100px}
+.kb-header{display:flex;justify-content:space-between;align-items:center;padding:18px;background:transparent}
+.kb-title{margin:0;font-size:20px;color:var(--accent)}
+.kb-count{font-size:13px}
+.kb-right{display:flex;gap:12px;align-items:center}
+.kb-search{padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);min-width:180px}
+.kb-controls{display:flex;gap:16px;align-items:flex-start;margin-bottom:14px}
+.kb-add{display:flex;gap:8px;flex:1}
+.kb-add input,.kb-add select{padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)}
+.kb-board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kb-column{background:var(--card);padding:12px;border-radius:10px;min-height:220px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.col-title{margin:0;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.col-list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.task-card{background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6));padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.04)}
+.task-top{display:flex;justify-content:space-between;align-items:center}
+.task-title{font-weight:600}
+.task-desc{margin-top:6px;color:var(--muted);font-size:13px}
+.task-meta{margin-top:8px;font-size:12px;color:var(--muted)}
+.task-actions{display:flex;gap:6px}
+.btn{background:var(--accent);color:white;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.06)}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.danger{background:var(--danger)}
+.priority-low{border-left:4px solid #10b981}
+.priority-medium{border-left:4px solid #f59e0b}
+.priority-high{border-left:4px solid #ef4444}
+
+@media (max-width:900px){.kb-board{grid-template-columns:1fr} .kb-controls{flex-direction:column} .kb-search{min-width:140px}}

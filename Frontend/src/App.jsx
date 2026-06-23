@@ -10,6 +10,7 @@ import ManufacturingDashboard from './pages/ManufacturingDashboard'
 import BankingDashboard from './pages/BankingDashboard'
 import SchoolDashboard from './pages/SchoolDashboard'
 import TodoApp from './todo/App'
+import KanbanApp from './kanban/App'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -30,6 +31,7 @@ export default function App() {
       {route === 'crm' && <CRMDashboard onNavigate={navigate} />}
       {route === 'banking' && <BankingDashboard onNavigate={navigate} />}
       {route === 'todo' && <TodoApp />}
+      {route === 'kanban' && <KanbanApp />}
       {route === 'school' && <SchoolDashboard onNavigate={navigate} />}
     </div>
   )
