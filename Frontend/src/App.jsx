@@ -11,6 +11,7 @@ import BankingDashboard from './pages/BankingDashboard'
 import SchoolDashboard from './pages/SchoolDashboard'
 import TodoApp from './todo/App'
 import KanbanApp from './kanban/App'
+import ExpenseApp from './expense/App'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -32,6 +33,7 @@ export default function App() {
       {route === 'banking' && <BankingDashboard onNavigate={navigate} />}
       {route === 'todo' && <TodoApp />}
       {route === 'kanban' && <KanbanApp />}
+      {route === 'expense' && <ExpenseApp />}
       {route === 'school' && <SchoolDashboard onNavigate={navigate} />}
     </div>
   )
