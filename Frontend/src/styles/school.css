@@ -32,7 +32,7 @@
 .student-name{display:flex;align-items:center;gap:8px}
 .avatar{width:36px;height:36px;border-radius:50%;background:#eef2ff;display:flex;align-items:center;justify-content:center}
 .status.active{color:#10b981}
-.status['at risk']{color:#f59e0b}
+.status.at-risk{color:#f59e0b}
 
 .school-right{display:flex;flex-direction:column;gap:12px}
 .activity-item{padding:8px 0;border-bottom:1px solid #f1f5f9}

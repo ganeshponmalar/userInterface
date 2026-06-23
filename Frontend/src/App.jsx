@@ -9,6 +9,7 @@ import CRMDashboard from './pages/CRMDashboard'
 import ManufacturingDashboard from './pages/ManufacturingDashboard'
 import BankingDashboard from './pages/BankingDashboard'
 import SchoolDashboard from './pages/SchoolDashboard'
+import TodoApp from './todo/App'
 
 export default function App() {
   const [route, setRoute] = useState('login')
@@ -28,6 +29,7 @@ export default function App() {
       {route === 'manufacturing' && <ManufacturingDashboard onNavigate={navigate} />}
       {route === 'crm' && <CRMDashboard onNavigate={navigate} />}
       {route === 'banking' && <BankingDashboard onNavigate={navigate} />}
+      {route === 'todo' && <TodoApp />}
       {route === 'school' && <SchoolDashboard onNavigate={navigate} />}
     </div>
   )
